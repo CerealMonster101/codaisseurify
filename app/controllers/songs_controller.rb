@@ -3,4 +3,8 @@ class SongsController < ApplicationController
     order(:name)
   end
 
+  def new
+    @song = Song.new
+  end
+
 end
