@@ -3,5 +3,5 @@ class Artist < ApplicationRecord
 
   validates :artist_name, presence: true
   validates :artist_name, uniqueness: true
-  validates :image_url, presence: true
+  validates :image_url, presence: false
 end
