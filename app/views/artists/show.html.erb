@@ -7,11 +7,13 @@
 <% if @artist.songs.any? %>
   <ul>
     <% @artist.songs.each do |song| %>
-      <li><p><%= song.name %></p></li><
-      <%= link_to "Delete Song from list", artist_song_path(@artist.id, song.id), method: :delete, data: {confirm: "Are you sure you want to delete this song?"} %>
+      <p><%= song.name %>
+      <%= link_to "Delete Song from list", artist_song_path(@artist.id, song.id), method: :delete, data: {confirm: "Are you sure you want to delete this song?"} %></p>
       <% end %>
   </ul>
 <% else %>
   <p>There are no songs in this artist.</p>
 <% end %>
 <hr>
+
+<%= link_to "Click to add new song", new_artist_song_path(@artist.id) %>

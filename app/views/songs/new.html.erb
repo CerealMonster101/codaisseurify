@@ -1,2 +1,9 @@
-<h1> New Song </h1>
-<%= render "form" %>
+
+<%= form_for [@artist, @song] do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: "Add new song name" %>
+
+  <%= f.submit "Save" %>
+
+<% end %>

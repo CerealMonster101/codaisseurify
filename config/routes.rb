@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-#Nested routes
+#Nested resources
   root "artists#index"
 
     resources :artists, only: [:index, :show, :destroy] do

@@ -1,8 +1,0 @@
-<%= form_for Song.new do |f| %>
-
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
-  <%= f.submit (@song.new_record? ? "Create" : "Delete") %>
-
-<% end %>
