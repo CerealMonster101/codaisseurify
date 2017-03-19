@@ -1,5 +1,5 @@
-Song.delete_all
-Artist.delete_all
+Song.destroy_all
+Artist.destroy_all
 
 Artist1 = Artist.create!(name: "Kermit the Frog", image_url: "http://res.cloudinary.com/dmagtxb3l/image/upload/v1489851312/kermit_axyj1f.jpg")
 Artist2 = Artist.create!(name: "Miss Piggy", image_url: "http://res.cloudinary.com/dmagtxb3l/image/upload/v1489851326/Muppets-Piggy_taliog.jpg")
