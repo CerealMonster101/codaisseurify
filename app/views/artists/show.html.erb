@@ -17,3 +17,7 @@
 <hr>
 
 <%= link_to "Click to add new song", new_artist_song_path(@artist.id) %>
+
+<hr>
+
+<%= link_to "Click to delete artist", artist_path(@artist.id),  method: :delete, data:{confirm:"Are you sure you want to delete this artist and all their songs?"} %>
