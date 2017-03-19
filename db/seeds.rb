@@ -7,6 +7,9 @@ Artist3 = Artist.create!(name: "Fozzie Bear", image_url: "http://res.cloudinary.
 Artist4 = Artist.create!(name: "Gonzo", image_url: "http://res.cloudinary.com/dmagtxb3l/image/upload/v1489851326/gonzo_real_yhgwpa.jpg")
 Artist5 = Artist.create!(name: "Beaker", image_url: "http://res.cloudinary.com/dmagtxb3l/image/upload/v1489851326/beaker_ql2xw1.jpg")
 
+artists_count = Artist.all.length
+puts "There are #{artists_count} artists"
+
 Song.create! ([
   {name: "Be a Cloud", artist: Artist1},
   {name: "Bein Green", artist: Artist1},
@@ -21,3 +24,6 @@ Song.create! ([
   {name: "Bein Beaker", artist: Artist5},
   {name: "Mah na Mah na", artist:Artist5 },
   ])
+
+songs_count = Song.all.length
+puts "There are #{songs_count} songs"
