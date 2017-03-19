@@ -7,10 +7,10 @@ class SongsController < ApplicationController
   end
 
   def create
-    @song = @artist.songs.build (song_params)
+    @song = @artist.songs.build(song_params)
 
     if @song.save
-    redirect_to artist_songs_path(@artist), notice: "Thanks for adding a new song!"
+    redirect_to artist_path(@artist), notice: "Thanks for adding a new song!"
     else
       render :new
     end

@@ -12,9 +12,7 @@ class ArtistsController < ApplicationController
     @songs = Song.new
   end
 
-  def new
-    @artist = Artist.new
-  end
+
 
   def destroy
     @artist.destroy
